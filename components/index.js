@@ -1,3 +1,4 @@
-import { Welcome } from "./home";
+import { Welcome, Carousel, Headings } from "./home";
 
-export { Welcome }
+
+export { Welcome, Carousel, Headings }

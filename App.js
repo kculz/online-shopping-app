@@ -4,7 +4,7 @@ import { useFonts } from 'expo-font';
 import  * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
 import BottomTab from './navigation/BottomTab';
-import { Cart } from './screens';
+import { Cart, ProductDetails } from './screens';
 
 
 const Stack = createNativeStackNavigator();
@@ -17,6 +17,7 @@ export default function App() {
     italic: require("./assets/fonts/Poppins-Italic.ttf"),
     light: require("./assets/fonts/Poppins-Light.ttf"),
     extraBold: require("./assets/fonts/Poppins-ExtraBold.ttf"),
+    semiBold: require("./assets/fonts/Poppins-SemiBold.ttf"),
     medium: require("./assets/fonts/Poppins-Medium.ttf"), 
   });
 
@@ -42,6 +43,12 @@ export default function App() {
         <Stack.Screen
           name="Cart"
           component={Cart }
+          options={{headerShown:false}}
+        />
+
+        <Stack.Screen
+          name="ProductDetails"
+          component={ProductDetails}
           options={{headerShown:false}}
         />
       </Stack.Navigator>
