@@ -47,5 +47,50 @@ export const styles = StyleSheet.create({
   price: {
     fontFamily: "semibold",
     fontSize: SIZES.lg
+  },
+  ratingRow: {
+    marginHorizontal: SIZES.lg,
+    paddingBottom: SIZES.sm,
+     flexDirection: "row",
+     justifyContent: "space-between",
+     alignItems: "center",
+     width: width - 10,
+     top: 5
+  },
+  rating: {
+    top: SIZES.lg, 
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center" 
+  },
+  ratingText: {
+    fontFamily: "light",
+    color: COLORS.offwhite
+  },
+  counter: {
+    top: SIZES.lg, 
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: 44
+  },
+  counterText: {
+    fontFamily: "bold",
+    fontSize: SIZES.xl
+  },
+  descWrapper: {
+    marginTop: SIZES.lg * 2,
+    marginHorizontal: SIZES.lg,
+     
+  },
+  desc: {
+    fontFamily: "semibold",
+    fontSize: SIZES.xl
+  },
+  descText: {
+    fontFamily: "regular",
+    fontSize: SIZES.lg,
+    color: COLORS.dimgray
   }
+   
 })
