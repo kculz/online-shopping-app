@@ -5,7 +5,7 @@ import { width } from "../constants/theme"
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.secondary 
+    backgroundColor: COLORS.primary 
   },
 
   upperRow: {
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
   },
   details: {
     marginTop: - SIZES.lg,
-    backgroundColor: COLORS.secondary,
+    backgroundColor: COLORS.primary,
     width: width,
     borderTopLeftRadius: SIZES.md,
     borderTopRightRadius: SIZES.md,
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   priceWrapper: {
     padding:10,
-    backgroundColor: COLORS.tertiary,
+    backgroundColor: COLORS.secondary,
     borderRadius: SIZES.lg,
   },
   price: {
@@ -90,7 +90,33 @@ export const styles = StyleSheet.create({
   descText: {
     fontFamily: "regular",
     fontSize: SIZES.lg,
-    color: COLORS.dimgray
+    textAlign: "justify",
+    marginBottom: SIZES.sm
+  },
+  location: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: COLORS.secondary,
+    padding: SIZES.sm - 5,
+    borderRadius: SIZES.lg,
+    marginHorizontal: SIZES.lg
+  },
+  cartRow: {
+    marginHorizontal: SIZES.xl,
+    paddingBottom: SIZES.sm,
+    paddingTop: SIZES.lg,
+    gap: SIZES.xxl,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    width: width - 44,
+  },
+  btn: {
+    backgroundColor: COLORS.tertiary,
+    borderRadius: SIZES.lg,
+    padding: SIZES.sm,
+    width: 140
   }
    
 })
