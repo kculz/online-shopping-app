@@ -5,7 +5,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen'
 import { Ionicons } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
-const ProductCardView = () => {
+const ProductCardView = ({item}) => {
     const navigation = useNavigation();
   return (
    <TouchableOpacity onPress={ () => navigation.navigate("ProductDetails")}>
@@ -18,9 +18,9 @@ const ProductCardView = () => {
             </View>
 
             <View style={styles.details}>
-                <Text style={styles.title} numberOfLines={1}>Product</Text>
-                <Text style={styles.supplier} numberOfLines={1}>Supplier Name</Text>
-                <Text style={styles.price} numberOfLines={1}>$250</Text>
+                <Text style={styles.title} numberOfLines={1}>{item.title}</Text>
+                <Text style={styles.supplier} numberOfLines={1}>{item.supplier}</Text>
+                <Text style={styles.price} numberOfLines={1}>{item.price}</Text>
             </View>
 
             <TouchableOpacity style={styles.addBtn} >
